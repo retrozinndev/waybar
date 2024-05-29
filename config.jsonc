@@ -191,6 +191,6 @@
         },
         "escape": true,
         "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null", // Script in resources folder
-	"on-click": "spotify"
+	"on-click": "playerctl play-pause"
     }
 }
