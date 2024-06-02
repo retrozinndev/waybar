@@ -24,5 +24,20 @@ Clicking in the widget will toggle play/pause actions, you need [playerctl](http
 ### Battery status
 The Battery status widget will only appear if its percentage is below 100%. This is made for preserving space on waybar.
 
+## Installation
+You can simply copy `mocha.css`, `style.css` and `config.jsonc` to your waybar directory and restart waybar.
+
+### Fast install
+In order to install this style right away, just run this command line, according to your shell:
+Obs.: change `/etc/xdg/waybar` to your waybar config dir if needed.
+#### Bash / sh / zsh
+```sh
+ $ git clone https://github.com/retrozinndev/waybar && cd waybar && sudo mkdir /etc/xdg/waybar/backup-folder && sudo cp /etc/xdg/waybar/style.css /etc/xdg/waybar/config.jsonc /etc/xdg/waybar/backup-folder && cp style.css mocha.css config.jsonc /etc/xdg/waybar
+```
+#### Nushell
+```nushell
+ $ git clone https://github.com/retrozinndev/waybar ; cd waybar ; sudo mkdir /etc/xdg/waybar/backup-folder ; sudo cp /etc/xdg/waybar/style.css /etc/xdg/waybar/config.jsonc /etc/xdg/waybar/backup-folder ; cp style.css mocha.css config.jsonc /etc/xdg/waybar
+```
+
 ## Issues
 Got any issue? Please report it at the [Issues Tab](https://github.com/retrozinndev/waybar/issues/new), I'll be happy for helping you out!
