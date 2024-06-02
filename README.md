@@ -29,7 +29,8 @@ You can simply copy `mocha.css`, `style.css` and `config.jsonc` to your waybar d
 
 ### Fast install
 In order to install this style right away, just run this command line, according to your shell:
-Obs.: change `/etc/xdg/waybar` to your waybar config dir if needed.
+> ℹ️ Notice: both scripts will make a backup folder: `/etc/xdg/waybar/backup-folder`, containing all previous waybar files.
+
 #### Bash / sh / zsh
 ```sh
  $ git clone https://github.com/retrozinndev/waybar && cd waybar && sudo mkdir /etc/xdg/waybar/backup-folder && sudo cp /etc/xdg/waybar/style.css /etc/xdg/waybar/config.jsonc /etc/xdg/waybar/backup-folder && cp style.css mocha.css config.jsonc /etc/xdg/waybar
