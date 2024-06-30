@@ -1,9 +1,10 @@
 # João's custom Waybar
 My personal waybar configuration that I use everyday! Colors are based on the [Catppuccin Mocha Palette](https://github.com/catppuccin)
 
-<div class="images">
+<div class="screenshots">
     <img style="width:90%;margin:auto" src="repo/screenshot_usage.png">
 </div>
+
 ## Pre-requisites
 ### Media
 For making the media widget work, you first need the [mediaplayer.py](https://github.com/Alexays/Waybar/blob/master/resources/custom_modules/mediaplayer.py) 
