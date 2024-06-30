@@ -40,12 +40,12 @@ In order to install this style right away, just run this command line, according
 
 #### Bash / sh / zsh
 ```sh
- $ git clone https://github.com/retrozinndev/waybar && cd waybar && sudo mkdir ~/.config/waybar/bkp && sudo cp ~/.config/waybar/style.css ~/.config/waybar/config.jsonc ~/.config/waybar/bkp && cp style.css mocha.css config.jsonc ~/.config/waybar
+ $ git clone https://github.com/retrozinndev/waybar && cd waybar && mkdir ~/.config/waybar/bkp && cp ~/.config/waybar/style.css ~/.config/waybar/config.jsonc ~/.config/waybar/bkp && cp style.css mocha.css config.jsonc ~/.config/waybar
 ```
 
 #### Nushell
 ```nushell
- $ git clone https://github.com/retrozinndev/waybar; cd waybar; sudo mkdir ~/.config/waybar/bkp; sudo cp ~/.config/waybar/style.css ~/.config/waybar/config.jsonc ~/.config/waybar/bkp; cp style.css mocha.css config.jsonc ~/.config/waybar
+ $ git clone https://github.com/retrozinndev/waybar; cd waybar; smkdir ~/.config/waybar/bkp; cp ~/.config/waybar/style.css ~/.config/waybar/config.jsonc ~/.config/waybar/bkp; cp style.css mocha.css config.jsonc ~/.config/waybar
 ```
 
 ## Issues
