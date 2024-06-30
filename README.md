@@ -1,11 +1,11 @@
 # João's custom Waybar
 My personal waybar configuration that I use everyday! Colors are based on the [Catppuccin Mocha Palette](https://github.com/catppuccin)
 
-<img style="width:90%" src="repo/screenshot.png">
-
+<div class="images">
+    <img style="width:90%;margin:auto" src="repo/screenshot_usage.png">
+</div>
 ## Pre-requisites
 ### Media
-
 For making the media widget work, you first need the [mediaplayer.py](https://github.com/Alexays/Waybar/blob/master/resources/custom_modules/mediaplayer.py) 
 script included in the [Waybar repo](https://github.com/Alexays/Waybar). You can copy this script to the `~/.config/waybar/` directory(if you don't have 
 this folder, you can create one with `mkdir ~/.config/waybar`).
@@ -35,7 +35,7 @@ You can simply copy `mocha.css`, `style.css` and `config.jsonc` to your waybar d
 
 ### Fast install
 In order to install this style right away, just run this command line, according to your shell:
-> ℹ️ Notice: both scripts will make a backup folder: `/etc/xdg/waybar/bkp`, containing all previous waybar files.
+> ℹ️ Notice: both scripts will make a backup folder: `~/.config/waybar/bkp`, containing all previous waybar files.
 
 #### Bash / sh / zsh
 ```sh
