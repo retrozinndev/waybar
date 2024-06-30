@@ -1,18 +1,21 @@
 
 @import "mocha.css";
 
-* {
+window {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: "Symbols Nerd Font Mono", sans-serif, "Font Awesome 5";
+    font-family: "0xProto Nerd Font Regular", sans-serif, "Font Awesome 5";
     font-size: 12px;
     border-radius: 10px;
     color: @text;
 }
 
+* {
+    color: @text;
+    border-radius: 10px;
+}
+
 window#waybar {
-    margin-top: 5px;
-    background-color: shade(@base, 0.5);
-    border-bottom: 2px solid alpha(@crust, 0.5);
+    background-color: transparent;
 }
 
 window#waybar.hidden {
@@ -29,7 +32,7 @@ window#waybar.solo {
 */
 
 window#waybar.termite {
-    background-color: @base;
+    background-color: alpha(@base, .1);
 }
 
 window#waybar.chromium {
@@ -58,26 +61,41 @@ button:hover {
 
 #workspaces {
     background-color: @base;
-    margin-left: 4px;
+    border-radius: 18px;
+    padding: 4px;
+    padding-bottom: 2px;
+    padding-top: 2px;
 }
 
 #workspaces button {
-    border-radius: 12px;
-    padding: 0px 4px;
-    /* background-color: @base; */
+    border-radius: 50%;
+    padding: 0px 6px;
     color: @blue;
+    font-size: 18px;
 }
 
 #workspaces button:hover {
-    background-color: shade(@blue, 0.2);
+    background-color: shade(@blue, 0.25);
 }
 
 #workspaces button.active {
-    background: shade(@blue, 0.4);
+    background: shade(@blue, .5);
 }
 
 #workspaces button.urgent {
     background-color: shade(@orange, 0.6);
+}
+
+#custom-notifications {
+    font-size: 14px;
+    padding: 6px 6px;
+    background: @base;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#custom-notifications:hover {
+    background: shade(@blue, .5);
 }
 
 #mode {
