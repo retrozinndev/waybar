@@ -8,7 +8,8 @@
     // Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces",
-        "custom/media"
+        "custom/media",
+	"hyprland/window"
     ],
     "modules-center": [
 	"clock"
@@ -54,7 +55,7 @@
     "hyprland/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
-    "hyprland/scratchpad": {
+    "hyprland/window": {
         "format": "{icon} {count}",
         "show-empty": false,
         "format-icons": ["", ""],
@@ -63,7 +64,7 @@
     },
     "custom/notifications": {
     	"tooltip": false,
-    	"format": "{icon}",
+    	"format": " {icon} ",
     	"format-icons": {
       		"notification": "<span foreground='red'><sup></sup></span>",
       		"none": "",
@@ -121,7 +122,7 @@
     "clock": {
         "timezone": "",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt>{calendar}</tt>",
-	"format": "{:L%a %d, %H:%M}",
+	"format": "{:L%a. %d, %H:%M}",
         "format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {
@@ -205,6 +206,7 @@
         "format": "{icon} {}",
         "return-type": "json",
         "max-length": 40,
+	"escape": true,
         "format-icons": {
 	    "firefox": "",
 	    "discord": "",
@@ -213,6 +215,6 @@
         },
         "escape": true,
         "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null", // Script in resources folder
-	"on-click": "playerctl play-pause"
+	"on-click": "playerctl --player spotify play-pause" // Change "spotify to your preferred player"
     }
 }
