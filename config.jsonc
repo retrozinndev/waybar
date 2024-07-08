@@ -196,6 +196,7 @@
             "car": "",
             "default": ["", "", ""]
         },
+	"exec-if": "which pavucontrol",
         "on-click": "pavucontrol"
     },
     "custom/media": {
