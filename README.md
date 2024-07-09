@@ -1,4 +1,8 @@
 # João's custom Waybar
+
+> [!important]
+> Repository is now moved to [retrozinndev/Hyprland-Dots](https://github.com/retrozinndev/Hyprland-Dots), inside `waybar/` subdirectory.
+
 My personal waybar configuration that I use everyday! Colors are based on the [Catppuccin Mocha Palette](https://github.com/catppuccin)
 
 <div class="screenshots">
